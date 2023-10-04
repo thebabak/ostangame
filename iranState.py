@@ -40,7 +40,7 @@ while len(guessed_ostan)<32:
     FG1=First_game(pos_shansi)
     
     answer=screen.textinput(title="استان", prompt="کدوم مرکز استانه؟")
-    
+    print(answer,City_Markaz)
 
         
         
@@ -54,7 +54,17 @@ while len(guessed_ostan)<32:
         #print(ostad_data.x)
         t.goto(pos_shansi)
         t.color("black")
-        t.write(answer)
+        t.write(answer, font=20)
+    else: 
+        guessed_ostan.append(City_Markaz)
+        t=turtle.Turtle()
+        t.hideturtle()
+        t.penup()
+        
+        #print(ostad_data.x)
+        t.goto(pos_shansi)
+        t.color("black")
+        t.write(City_Markaz, font=("Arial",20))
         
             
 '''   if answer in ostanha:
