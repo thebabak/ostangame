@@ -18,14 +18,3 @@ class MarkazOstan:
         shahr.color("white")
         shahr.shapesize(.5)
         shahr.goto(position)
-
-ostan_CSV=pandas.read_csv("ostan.csv")# data
-ostanha=ostan_CSV.ostan.to_list()#allstate
-
-ostanha_x=ostan_CSV.x.to_list()
-ostanha_y=ostan_CSV.y.to_list()
-START_POS=[]
-for i in range(len(ostanha_x)):
-    START_POS.append([ostanha_x[i],ostanha_y[i]])
-
-
